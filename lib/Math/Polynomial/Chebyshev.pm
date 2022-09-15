@@ -29,16 +29,16 @@ Math::Polynomial::Chebyshev - Chebyshev polynomials of the first kind
     my $p = Math::Polynomial::Chebyshev -> chebyshev(7);
 
     # get the location of all extremas
-    my $x = $p -> extremas();
+    my @xe = $p -> extremas();
 
     # get the location of all roots
-    $x = $p -> roots();
+    my @xn = $p -> roots();
 
     # use higher accuracy
     use Math::BigFloat;
     Math::BigFloat -> accuracy(60);
-    my $n = Math::BigFloat -> new(7);
-    $x = Math::Polynomial::Chebyshev -> chebyshev($n);
+    my $n_mbf = Math::BigFloat -> new(7);
+    my $p_mbf = Math::Polynomial::Chebyshev -> chebyshev($n_mbf);
 
 =head1 DESCRIPTION
 

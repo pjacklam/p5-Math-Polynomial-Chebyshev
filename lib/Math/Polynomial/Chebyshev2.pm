@@ -29,13 +29,13 @@ Math::Polynomial::Chebyshev2 - Chebyshev polynomials of the second kind
     my $p = Math::Polynomial::Chebyshev2 -> chebyshev2(7);
 
     # get the location of all roots
-    my $x = $p -> roots();
+    my @xe = $p -> roots();
 
     # use higher accuracy
     use Math::BigFloat;
     Math::BigFloat -> accuracy(60);
-    my $n = Math::BigFloat -> new(7);
-    $x = Math::Polynomial::Chebyshev2 -> chebyshev2($n);
+    my $n_mbf = Math::BigFloat -> new(7);
+    my $p_mbf = Math::Polynomial::Chebyshev2 -> chebyshev2($n_mbf);
 
 =head1 DESCRIPTION
 
