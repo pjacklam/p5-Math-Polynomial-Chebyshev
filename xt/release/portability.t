@@ -1,11 +1,4 @@
-#!perl
-
-BEGIN {
-    unless ($ENV{RELEASE_TESTING}) {
-        print "1..0 # SKIP these tests are for release candidate testing";
-        exit;
-    }
-}
+# -*- mode: perl; -*-
 
 use strict;
 use warnings;
@@ -21,7 +14,7 @@ options(
         test_amiga_length   => 1,
         test_ansi_chars     => 1,
         test_case           => 1,
-        test_dos_length     => 0,
+        #test_dos_length     => 1,
         test_mac_length     => 1,
         test_one_dot        => 1,
         test_space          => 1,
