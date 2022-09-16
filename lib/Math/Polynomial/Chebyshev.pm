@@ -10,7 +10,7 @@ use warnings;
 use Carp qw< croak >;
 use Math::Polynomial;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 our @ISA = qw< Math::Polynomial >;
 
 =pod
