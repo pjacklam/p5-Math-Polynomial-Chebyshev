@@ -31,7 +31,6 @@ pod2htm*
 *.rej
 *.diff
 
-# archives and compressed files
+# distribution-specific
 
-*.tar
-*.gz
+/Math-Polynomial-Chebyshev-[0-9]*
