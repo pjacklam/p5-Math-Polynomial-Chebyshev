@@ -43,7 +43,7 @@ Math::Polynomial::Chebyshev - Chebyshev polynomials of the first kind
 =head1 DESCRIPTION
 
 This package extends Math::Polynomial, so each instance polynomial created by
-this modules is a subclass of Math::Polynomial.
+this module is a subclass of Math::Polynomial.
 
 The Chebyshev polynomials of the first kind are orthogonal with respect to the
 weight function 1/sqrt(1-x^2).
@@ -125,7 +125,7 @@ sub chebyshev {
 
 =item I<roots()>
 
-C<$p-E<gt>roots> return the location of all root of C<$p>. All roots
+C<$p-E<gt>roots()> returns the location of all root of C<$p>. All roots
 are located in the open interval (-1,1).
 
     # get the roots of a polynomial
@@ -173,7 +173,7 @@ sub roots {
 
 =item I<extremas()>
 
-C<$p-E<gt>extremas> returns the location of all extremas of C<$p> located in
+C<$p-E<gt>extremas()> returns the location of all extremas of C<$p> located in
 the closed interval [-1,1]. There are no extremas outside of this interval.
 Only the extremas in the closed interval (-1,1) are local extremas. All
 extremas have values +/-1.
